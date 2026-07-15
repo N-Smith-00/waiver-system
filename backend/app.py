@@ -11,7 +11,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.post("/submit")
+@app.post("/baseline-waiver-test/submit")
 async def submit(data: dict):
     print(data)
 

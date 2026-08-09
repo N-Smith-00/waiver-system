@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.checkbox {
+    padding: 0;
+    width: auto;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.status {
+    margin-top: 15px;
+    color: black;
+}
+
+.status.success {
+    color: green;
+}
+
+.status.error {
+    color: red;
+}
+
+#error {
+    color: red;
+}

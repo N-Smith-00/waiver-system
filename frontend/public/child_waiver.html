@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h2>Adult Waiver</h2>
+<h2>Minor Waiver</h2>
 
 <form id="waiverForm">
     <h3>Participant Info</h3>
@@ -38,6 +38,27 @@
         required
     >
 
+    <h3>Guardian Info</h3>
+
+    <label for="guard-fname">First Name</label>
+    <input 
+        type="text" 
+        name="guard_fname" 
+        id="guard-fname" 
+        required
+    >
+
+    <label for="guard-lname">Last Name</label>
+    <input type="text" name="guard_lname" id="guard-fname">
+
+    <label for="guard-dob">Date of Birth</label>
+    <input 
+        id="guard-dob"
+        type="date"
+        name="guard_dob"
+        required
+    >
+
     <label for="email">Email</label>
     <input
         id="email"
@@ -53,6 +74,11 @@
         name="phone_num"
         required
     >
+
+    <label class="checkbox-label">
+        <input type="checkbox" name="guard_ack" value="true" class="checkbox" required>
+        <span>I certify that I am the participant's legal guardian and am authorized to submit this waiver on their behalf</span>
+    </label>
 
     <h3>Emergency Contact</h3>
 
@@ -71,7 +97,7 @@
         name="ec_lname" 
     >
 
-    <label for="ec-phone-num">Emergency contact's Phone Number</label>
+    <label for="ec-phone-num">Emergency Contact's Phone Number</label>
     <input 
         id="ec-phone-num"
         type="tel"
